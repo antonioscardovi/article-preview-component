@@ -24,28 +24,84 @@
 }
 
 .background .card {
-  width: 700px;
-  border-radius: 20px;
+  width: 730px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 26px 30px -12px #dce3e9;
+          box-shadow: 0px 26px 30px -12px #dce3e9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: red;
+  background-color: #fff;
 }
 
 .background .card .image {
   background-image: url("/images/drawers.jpg");
   background-size: cover;
-  height: 240px;
+  height: 280px;
   width: 100%;
-  border-bottom-left-radius: 20px;
-  border-top-left-radius: 20px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 .background .card .content {
-  padding: 25px;
+  padding: 0 20px 0 32px;
 }
 
-.background .card .content .text h2 {
+.background .card .content .text {
+  padding: 10px;
+}
+
+.background .card .content .text .headline {
+  color: #48556a;
   font-size: 20px;
+  padding-top: 20px;
+}
+
+.background .card .content .text .text-body {
+  color: #6d7f97;
+  line-height: 21px;
+  margin: 10px 0;
+}
+
+.background .card .content .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 0 0 0;
+}
+
+.background .card .content .social .avatar img {
+  width: 42px;
+  border-radius: 50px;
+  margin-right: 15px;
+}
+
+.background .card .content .social .info {
+  margin-top: 2px;
+}
+
+.background .card .content .social .info .name {
+  color: #48556a;
+  font-weight: 700;
+}
+
+.background .card .content .social .info .date {
+  color: #6d7f97;
+  margin-top: 2px;
+}
+
+.background .card .content .social .actions {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.background .card .content .social .actions .share-icon {
+  padding: 7px;
+  background-color: #ecf2f8;
+  border-radius: 50px;
+}
+
+.background .card .content .social .actions .active {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
