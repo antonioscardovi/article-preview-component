@@ -92,6 +92,7 @@
 
 .background .card .content .social .actions {
   margin-left: auto;
+  margin-top: 2px;
   margin-right: 20px;
 }
 
@@ -99,6 +100,16 @@
   padding: 7px;
   background-color: #ecf2f8;
   border-radius: 50px;
+}
+
+.background .card .content .social .actions .share-icon:hover + .active {
+  display: block;
+  background-color: #6d7f97;
+}
+
+.background .card .content .social .actions .share-icon:hover + .active img {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
 }
 
 .background .card .content .social .actions .active {

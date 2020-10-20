@@ -68,11 +68,19 @@
         }
         .actions {
           margin-left: auto;
+          margin-top: 2px;
           margin-right: 20px;
           .share-icon {
             padding: 7px;
             background-color: hsl(210, 46%, 95%);
             border-radius: 50px;
+          }
+          .share-icon:hover + .active {
+            display: block;
+            background-color: hsl(214, 17%, 51%);
+            img {
+              filter: brightness(0) invert(1);
+            }
           }
           .active {
             display: none;
