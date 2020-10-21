@@ -96,23 +96,78 @@
   margin-right: 20px;
 }
 
-.background .card .content .social .actions .share-icon {
+.background .card .content .social .actions .share {
   padding: 7px;
   background-color: #ecf2f8;
   border-radius: 50px;
+  cursor: pointer;
 }
 
-.background .card .content .social .actions .share-icon:hover + .active {
-  display: block;
+.background .card .content .social .actions .share:hover {
   background-color: #6d7f97;
 }
 
-.background .card .content .social .actions .share-icon:hover + .active img {
+.background .card .content .social .actions .share:hover img {
   -webkit-filter: brightness(0) invert(1);
           filter: brightness(0) invert(1);
 }
 
 .background .card .content .social .actions .active {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: absolute;
+  width: 160px;
+  background-color: #48556a;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px;
+  z-index: 1;
+  bottom: 43%;
+  left: 70.8%;
+  margin-left: -80px;
+}
+
+.background .card .content .social .actions .active p {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.background .card .content .social .actions .active::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.background .card .content .social .actions .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -50,15 +50,15 @@
                 <p class="date">28 Jun 2020</p>
               </div>
               <div class="actions">
-                <div class="share-icon">
+                <div class="share" onclick="share()">
                   <img src="/images/icon-share.svg" alt="" />
-                </div>
-                <div class="active">
-                  <p class="share">Share</p>
-                  <div class="icons">
-                    <img src="/images/icon-facebook.svg" alt="" />
-                    <img src="/images/icon-twitter.svg" alt="" />
-                    <img src="/images/icon-pinterest.svg" alt="" />
+                  <div class="active" id="popup">
+                    <p>Share</p>
+                    <div class="icons">
+                      <img src="/images/icon-facebook.svg" alt="" />
+                      <img src="/images/icon-twitter.svg" alt="" />
+                      <img src="/images/icon-pinterest.svg" alt="" />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -74,5 +74,7 @@
       >. Coded by
       <a href="https://www.github.com/antonioscardovi">Antonio Scardovi</a>.
     </div>
+
+    <script src="/script.js"></script>
   </body>
 </html>
