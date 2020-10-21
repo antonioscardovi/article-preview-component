@@ -88,23 +88,33 @@ $lightBlue: hsl(210, 46%, 95%);
             }
           }
           .active {
-            // visibility: hidden;
+            visibility: hidden;
             display: flex;
             justify-content: space-around;
             position: absolute;
-            width: 160px;
+            min-width: 160px;
             background-color: $darkGray;
             color: #fff;
             text-align: center;
-            border-radius: 6px;
-            padding: 10px;
+            border-radius: 10px;
+            padding: 15px 10px;
             z-index: 1;
-            bottom: 43%;
-            left: 70.8%;
+            bottom: 44%;
+            left: 67%;
             margin-left: -80px;
             p {
-              font-size: 16px;
+              color: $grayishBlue;
+              font-size: 13px;
+              letter-spacing: 6px;
+              padding: 5px 0 5px 20px;
               text-transform: uppercase;
+            }
+            .icons {
+              padding: 0 10px 0 5px;
+              margin: auto;
+              img {
+                padding: 0 10px;
+              }
             }
           }
           .active::after {
@@ -113,7 +123,7 @@ $lightBlue: hsl(210, 46%, 95%);
             top: 100%;
             left: 50%;
             margin-left: -5px;
-            border-width: 5px;
+            border-width: 12px;
             border-style: solid;
             border-color: #555 transparent transparent transparent;
           }
