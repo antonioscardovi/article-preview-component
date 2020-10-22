@@ -80,8 +80,8 @@ $lightBlue: hsl(210, 46%, 95%);
             padding: 7px;
             background-color: hsl(210, 46%, 95%);
             border-radius: 50px;
-            cursor: pointer;
             img {
+              cursor: pointer;
               user-select: none;
             }
           }
@@ -118,7 +118,7 @@ $lightBlue: hsl(210, 46%, 95%);
               padding: 0 10px 0 5px;
               margin: auto;
               img {
-                padding: 0 10px;
+                margin: 0 10px;
                 user-select: none;
               }
             }

@@ -101,10 +101,10 @@
   padding: 7px;
   background-color: #ecf2f8;
   border-radius: 50px;
-  cursor: pointer;
 }
 
 .background .card .content .social .actions .share img {
+  cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -157,7 +157,7 @@
 }
 
 .background .card .content .social .actions .active .icons img {
-  padding: 0 10px;
+  margin: 0 10px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
