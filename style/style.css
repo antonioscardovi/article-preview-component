@@ -26,8 +26,8 @@
 .background .card {
   width: 730px;
   border-radius: 10px;
-  -webkit-box-shadow: 0px 26px 30px -12px #dce3e9;
-          box-shadow: 0px 26px 30px -12px #dce3e9;
+  -webkit-box-shadow: 0px 42px 30px -6px #dfe9f3;
+          box-shadow: 0px 42px 30px -6px #dfe9f3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -86,7 +86,7 @@
 }
 
 .background .card .content .social .info .date {
-  color: #6d7f97;
+  color: #9eafc2;
   margin-top: 2px;
 }
 
