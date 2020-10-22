@@ -76,10 +76,14 @@ $lightBlue: hsl(210, 46%, 95%);
           margin-top: 2px;
           margin-right: 20px;
           .share {
+            position: relative;
             padding: 7px;
             background-color: hsl(210, 46%, 95%);
             border-radius: 50px;
             cursor: pointer;
+            img {
+              user-select: none;
+            }
           }
           .share:hover {
             background-color: $desaturatedBlue;
@@ -92,28 +96,30 @@ $lightBlue: hsl(210, 46%, 95%);
             display: flex;
             justify-content: space-around;
             position: absolute;
-            min-width: 160px;
+            min-width: 150px;
             background-color: $darkGray;
             color: #fff;
             text-align: center;
             border-radius: 10px;
             padding: 15px 10px;
             z-index: 1;
-            bottom: 44%;
-            left: 67%;
+            bottom: 180%;
+            left: -120%;
             margin-left: -80px;
             p {
               color: $grayishBlue;
-              font-size: 13px;
+              font-size: 12px;
               letter-spacing: 6px;
               padding: 5px 0 5px 20px;
               text-transform: uppercase;
             }
             .icons {
+              display: flex;
               padding: 0 10px 0 5px;
               margin: auto;
               img {
                 padding: 0 10px;
+                user-select: none;
               }
             }
           }

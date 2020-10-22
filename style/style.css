@@ -97,10 +97,18 @@
 }
 
 .background .card .content .social .actions .share {
+  position: relative;
   padding: 7px;
   background-color: #ecf2f8;
   border-radius: 50px;
   cursor: pointer;
+}
+
+.background .card .content .social .actions .share img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .background .card .content .social .actions .share:hover {
@@ -120,33 +128,40 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
   position: absolute;
-  min-width: 160px;
+  min-width: 150px;
   background-color: #48556a;
   color: #fff;
   text-align: center;
   border-radius: 10px;
   padding: 15px 10px;
   z-index: 1;
-  bottom: 44%;
-  left: 67%;
+  bottom: 180%;
+  left: -120%;
   margin-left: -80px;
 }
 
 .background .card .content .social .actions .active p {
   color: #9eafc2;
-  font-size: 13px;
+  font-size: 12px;
   letter-spacing: 6px;
   padding: 5px 0 5px 20px;
   text-transform: uppercase;
 }
 
 .background .card .content .social .actions .active .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding: 0 10px 0 5px;
   margin: auto;
 }
 
 .background .card .content .social .actions .active .icons img {
   padding: 0 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .background .card .content .social .actions .active::after {
