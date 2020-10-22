@@ -181,6 +181,45 @@
   animation: fadeIn 1s;
 }
 
+@media (max-width: 375px) {
+  .background .card {
+    max-width: 330px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .background .card .image {
+    border-bottom-left-radius: unset;
+    border-top-right-radius: 10px;
+    height: 214px;
+  }
+  .background .card .content {
+    padding: 0;
+  }
+  .background .card .content .text {
+    padding: 10px 36px;
+  }
+  .background .card .content .text .headline {
+    color: #48556a;
+    font-size: 16px;
+    padding-top: 20px;
+    line-height: 24px;
+  }
+  .background .card .content .text .text-body {
+    color: #6d7f97;
+    font-size: 13px;
+    line-height: 22px;
+    margin: 12px 0 10px 0;
+  }
+  .background .card .content .social {
+    padding: 10px 0;
+  }
+  .background .card .content .social .actions {
+    margin-right: 5px;
+  }
+}
+
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0;

@@ -144,6 +144,44 @@ $lightBlue: hsl(210, 46%, 95%);
   }
 }
 
+@media (max-width: 375px) {
+  .background {
+    .card {
+      max-width: 330px;
+      flex-direction: column;
+      .image {
+        border-bottom-left-radius: unset;
+        border-top-right-radius: 10px;
+        height: 214px;
+      }
+      .content {
+        padding: 0;
+        .text {
+          padding: 10px 36px;
+          .headline {
+            color: $darkGray;
+            font-size: 16px;
+            padding-top: 20px;
+            line-height: 24px;
+          }
+          .text-body {
+            color: $desaturatedBlue;
+            font-size: 13px;
+            line-height: 22px;
+            margin: 12px 0 10px 0;
+          }
+        }
+        .social {
+          padding: 10px 0;
+          .actions {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0;
