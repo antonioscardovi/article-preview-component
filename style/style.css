@@ -181,6 +181,10 @@
   animation: fadeIn 1s;
 }
 
+.background .card .content .social .mobile-actions {
+  display: none;
+}
+
 @media (max-width: 375px) {
   .background .card {
     max-width: 330px;
@@ -216,7 +220,88 @@
     padding: 10px 0;
   }
   .background .card .content .social .actions {
-    margin-right: 5px;
+    display: none;
+  }
+  .background .card .content .social .mobile-actions {
+    display: block;
+    margin-left: auto;
+    margin-top: 2px;
+    margin-right: 20px;
+  }
+  .background .card .content .social .mobile-actions .mobile-share {
+    position: relative;
+    padding: 7px;
+    background-color: #ecf2f8;
+    border-radius: 50px;
+  }
+  .background .card .content .social .mobile-actions .mobile-share img {
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  .background .card .content .social .mobile-share:hover {
+    background-color: #6d7f97;
+  }
+  .background .card .content .social .mobile-share:hover img {
+    -webkit-filter: brightness(0) invert(1);
+            filter: brightness(0) invert(1);
+  }
+  .background .card .content .social .mobile-active {
+    visibility: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    position: absolute;
+    min-width: 150px;
+    background-color: #48556a;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px 10px;
+    z-index: 1;
+    bottom: 180%;
+    left: -120%;
+    margin-left: -80px;
+  }
+  .background .card .content .social .mobile-active p {
+    color: #9eafc2;
+    font-size: 12px;
+    letter-spacing: 6px;
+    padding: 5px 0 5px 20px;
+    text-transform: uppercase;
+  }
+  .background .card .content .social .mobile-active .icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 10px 0 5px;
+    margin: auto;
+  }
+  .background .card .content .social .mobile-active .icons img {
+    margin: 0 10px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  .background .card .content .social .mobile-active::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 12px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  .background .card .content .social .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
   }
 }
 

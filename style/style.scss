@@ -139,6 +139,9 @@ $lightBlue: hsl(210, 46%, 95%);
             animation: fadeIn 1s;
           }
         }
+        .mobile-actions {
+          display: none;
+        }
       }
     }
   }
@@ -174,7 +177,76 @@ $lightBlue: hsl(210, 46%, 95%);
         .social {
           padding: 10px 0;
           .actions {
-            margin-right: 5px;
+            display: none;
+          }
+          .mobile-actions {
+            display: block;
+            margin-left: auto;
+            margin-top: 2px;
+            margin-right: 20px;
+            .mobile-share {
+              position: relative;
+              padding: 7px;
+              background-color: hsl(210, 46%, 95%);
+              border-radius: 50px;
+              img {
+                cursor: pointer;
+                user-select: none;
+              }
+            }
+          }
+          .mobile-share:hover {
+            background-color: $desaturatedBlue;
+            img {
+              filter: brightness(0) invert(1);
+            }
+          }
+          .mobile-active {
+            visibility: hidden;
+            display: flex;
+            justify-content: space-around;
+            position: absolute;
+            min-width: 150px;
+            background-color: $darkGray;
+            color: #fff;
+            text-align: center;
+            border-radius: 10px;
+            padding: 15px 10px;
+            z-index: 1;
+            bottom: 180%;
+            left: -120%;
+            margin-left: -80px;
+            p {
+              color: $grayishBlue;
+              font-size: 12px;
+              letter-spacing: 6px;
+              padding: 5px 0 5px 20px;
+              text-transform: uppercase;
+            }
+            .icons {
+              display: flex;
+              padding: 0 10px 0 5px;
+              margin: auto;
+              img {
+                margin: 0 10px;
+                user-select: none;
+              }
+            }
+          }
+          .mobile-active::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 12px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+          }
+          .show {
+            visibility: visible;
+            -webkit-animation: fadeIn 1s;
+            animation: fadeIn 1s;
           }
         }
       }
