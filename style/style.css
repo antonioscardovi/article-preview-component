@@ -226,7 +226,6 @@
     display: block;
     margin-left: auto;
     margin-top: 2px;
-    margin-right: 20px;
   }
   .background .card .content .social .mobile-actions .mobile-share {
     position: relative;
@@ -249,42 +248,61 @@
             filter: brightness(0) invert(1);
   }
   .background .card .content .social .mobile-active {
+    visibility: hidden;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     position: absolute;
     min-width: 330px;
     background-color: #48556a;
     color: #fff;
     text-align: center;
-    border-radius: 10px;
-    padding: 15px 10px;
-    z-index: 1;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 20px 10px;
     bottom: -100%;
-    right: 1%;
+    margin-left: -272px;
   }
   .background .card .content .social .mobile-active p {
     color: #9eafc2;
-    font-size: 12px;
+    font-size: 13px;
     letter-spacing: 6px;
     padding: 5px 0 5px 20px;
     text-transform: uppercase;
   }
-  .background .card .content .social .mobile-active .icons {
+  .background .card .content .social .mobile-active .mobile-icons {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     padding: 0 10px 0 5px;
-    margin: auto;
+    margin: auto 0;
   }
-  .background .card .content .social .mobile-active .icons img {
+  .background .card .content .social .mobile-active .mobile-icons img {
     margin: 0 10px;
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
+  }
+  .background .card .content .social .mobile-active .mobile-share-active {
+    margin: auto;
+    background-color: #6d7f97;
+    padding: 7px;
+    border-radius: 50px;
+  }
+  .background .card .content .social .mobile-active .mobile-share-active img {
+    -webkit-filter: brightness(0) invert(1);
+            filter: brightness(0) invert(1);
+  }
+  .background .card .content .social .mobile-active .mobile-share-active:hover {
+    background-color: #ecf2f8;
+  }
+  .background .card .content .social .mobile-active .mobile-share-active:hover img {
+    -webkit-filter: none;
+            filter: none;
   }
   .background .card .content .social .show {
     visibility: visible;
